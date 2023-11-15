@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="com.siliconcode_common_jar_0.0.1-SNAPSHOTPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.siliconcode.common.entity.Persona</class>
+    <class>com.siliconcode.common.entity.Servicio</class>
+    <class>com.siliconcode.common.entity.PersonaEspecialidad</class>
+    <class>com.siliconcode.common.entity.TipoPersona</class>
+    <class>com.siliconcode.common.entity.Agenda</class>
+    <class>com.siliconcode.common.entity.TipoEmpresa</class>
+    <class>com.siliconcode.common.entity.TipoIdentificacion</class>
+    <class>com.siliconcode.common.entity.Cargo</class>
+    <class>com.siliconcode.common.entity.EstadoCita</class>
+    <class>com.siliconcode.common.entity.Cita</class>
+    <class>com.siliconcode.common.entity.Especialidad</class>
+    <class>com.siliconcode.common.entity.Empresa</class>
+    <class>com.siliconcode.common.entity.Municipio</class>
+    <class>com.test.common.entity.FieldPosition</class>
+    <class>com.test.common.entity.Person</class>
+    <class>com.test.common.entity.Country</class>
+    <class>com.test.common.entity.Club</class>
+    <class>com.test.common.entity.PersonType</class>
+    <properties>
+      <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/rsas"/>
+      <property name="jakarta.persistence.jdbc.user" value="postgres"/>
+      <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+      <property name="jakarta.persistence.jdbc.password" value="12345678"/>
+    </properties>
+  </persistence-unit>
+</persistence>

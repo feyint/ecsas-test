@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: api-club
+  datasource:
+    url: jdbc:postgresql://localhost/club
+    username: postgres
+    password: 12345678
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        jdbc:
+          lob:
+            non_contextual_creation: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+server:
+  port: 8081
+  error:
+    whitelabel:
+      enabled: false
+
+spring.devtools:
+  restart:
+    enabled: true
